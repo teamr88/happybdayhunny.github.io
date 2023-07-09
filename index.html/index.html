@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 60px;
+    }
+    
+    .container {
+      max-width: 5000px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 20px;
+      padding: 150px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: relative; /* Add this */
+    }
+    
+    .navbar {
+  background-color: #333;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #555;
+}
+
+    
+    h1 {
+      font-size: 68px;
+      margin-top: 250px;
+      letter-spacing: 2px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: italic;
+    }
+    
+    p {
+      font-size: 44px;
+      margin-top: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: italic;
+    }
+    
+    .welcome {
+      animation-name: fade-in;
+      animation-duration: 2s;
+    }
+    
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+ 
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 30px;
+  }
+  
+  .container {
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+  
+  p {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+  
+  .container {
+    padding: 30px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-top: 80px;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+}
+       </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">More</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="reasons.html">Reasons</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="message.html">Message</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="welcome" id="title">
+      <h1>Happiest Birthday!</h1>
+      <p>Hasnain,</p>
+      <p>Wishing you a fantastic day filled with joy, laughter, and wonderful memories!</p>
+    </div>
+  </div>
+</body>
+</html> 

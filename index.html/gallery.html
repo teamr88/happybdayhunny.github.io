@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+    .container {
+      max-width: 2000px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 20px;
+      padding: 90px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .navbar {
+  background-color: #333;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #555;
+}
+
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap:30px;
+        }
+    .gallery div img {
+        
+    border-radius: 15px;
+    }
+    .gallery div{
+    position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  .container {
+    padding: 30px;
+  }
+  
+  .gallery div img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .gallery div img {
+    width: 100%;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">More</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="reasons.html">Reasons</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="message.html">Message</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+  <h1>My BESTFRIEND!</h1>
+        <div class="gallery">
+        <div>
+            <img src="bdaygallery1.jpeg" alt="bdaygallery1" width="74.5%">
+                           </div>  
+                           <div>
+                            <img src="bdaygallery2.jpeg" alt="bdaygallery2" width="78%" >
+                </div>
+                    <div>
+                    <img src="bdaygallery3.jpeg" alt="bdaygallery3" width="66%">
+                     </div>
+                </div>       
+                <div class="gallery">
+                    <div>
+                        <img src="bdaygallery4.jpeg" alt="bdaygallery4" width="70%">
+                                       </div>
+                     <div>
+                     <img src="bdaygallery5.jpeg" alt="bdaygallery5" width="77%">
+                    </div>
+                    <div>
+                        <img src="bdaygallery6.jpeg" alt="bdaygallery6" width="60%">
+                                       </div>       
+                </div>
+                <div class="gallery">
+                    <div>
+                        <img src="bdaygallery7.jpeg" alt="bdaygallery7" width="60%">
+                                       </div>
+                     <div>
+                     <img src="bdaygallery8.jpeg" alt="bdaygallery8" width="62%">
+                    </div>
+                    <div>
+                        <img src="bdaygallery9.jpeg" alt="bdaygallery9" width="60%">
+                                       </div>       
+                </div>                 
+    </div>
+  </div>
+</body>
+</html>
